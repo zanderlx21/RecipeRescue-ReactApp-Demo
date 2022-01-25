@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+   sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+ code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+   monospace;
+ }
+ body {
+  background-color: white;
+ }
+ /* .Fixed-Header {
+  position: sticky;
+  top: 0;
+  width: 100%
+ } */
+ #App-Name-Header {
+  color: rgb(235, 100, 98);
+  transform: translateY(-12px);
+  font-size: 3rem;
+  margin: 0;
+  height: 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+ }
+
+ #Extra-Seach-Options-Button{
+  background: transparent;
+  border: transparent;
+  position: absolute;
+  transform: translate(300px, 72px)
+ }
+
+ #Extra-Seach-Options-Button:hover{
+  border-bottom: 4px solid rgb(39, 115, 177);
+ }
+
+ .Search-Container {
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(255, 238, 238);
+  border-top: 8px solid rgb(247, 80, 80);
+  height: 120px;
+  /* border-image-source: 4px solid linear-gradient(to right, rgb(239, 100, 97), rgb(145, 64, 63) ); */
+  /* border-bottom: 4px solid rgb(235, 100, 98); */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+ }
+ .Form-Container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: enterForm 1s calc(1) cubic-bezier(0.62, 0.2, 0.38, 1.14);
+  -webkit-animation: enterForm 1s calc(1) cubic-bezier(0.62, 0.2, 0.38, 1.14);
+  -moz-animation: enterForm 1s calc(1) cubic-bezier(0.62, 0.2, 0.38, 1.14);
+  -o-animation: enterForm 1s calc(1) cubic-bezier(0.62, 0.2, 0.38, 1.14);
+  -ms-animation: enterForm 1s calc(1) cubic-bezier(0.62, 0.2, 0.38, 1.14);
+ }
+
+ @keyframes enterForm {
+  from {
+   transform: translateY(-100px);
+  }
+  to {
+   transform: translateY(0px);
+  }
+ }
+
+ @-moz-keyframes enterForm {
+  from {
+   transform: translateY(-100px);
+  }
+  to {
+   transform: translateY(0px);
+  }
+ }
+
+ @-webkit-keyframes enterForm {
+  from {
+   transform: translateY(-100px);
+  }
+  to {
+   transform: translateY(0px);
+  }
+ }
+
+ @-o-keyframes enterForm {
+  from {
+   transform: translateY(-100px);
+  }
+  to {
+   transform: translateY(0px);
+  }
+ }
+
+ @-ms-keyframes enterForm {
+  from {
+   transform: translateY(-100px);
+  }
+  to {
+   transform: translateY(0px);
+  }
+ }
+ #The-Form {
+  border-bottom: 3px solid rgb(87, 87, 87);
+  width: 100%;
+  z-index: 5;
+ }
+ form {
+  display: flex;
+  align-items: flex-start;
+ }
+ #Search-Button {
+  color: white;
+  background-color: rgb(53, 177, 135);
+  font-size: large;
+  font-weight: 500;
+  height: 50px;
+  width: 175px;
+  border-radius: 50px;
+  border: none;
+  z-index: 3;
+ }
+ #Search-Button:hover {
+  background-color: rgb(24, 75, 109);
+  transition-duration: 0.3s;
+  cursor: pointer;
+  /* animation: rise 1s calc(1) ease-in */
+ }
+
+.Underline-search-text {
+  height: 25px;
+  background-color: black;
+}
+
+.Radio-Buttons {
+  position: absolute;
+  transform: translateY(90px);
+  background-color:rgb(255, 238, 238);
+  display: block;
+}
+
+
+
+ /* #chef-hand {
+  z-index: 1;
+  position: absolute;
+  transform: translate(130px, -40px) rotate(25deg);
+  height: 60px;
+  z-index: -1; */
+  /* animation: rise 1s calc(1) ease-in */
+ /* } */
+ /* @keyframes rise {
+   from {
+    transform: translate(0);
+   }
+   to {
+    transform: translateZ(50px, 50px);
+   }
+  } */
+ #Search-Bar {
+  background-color: transparent;
+  border: 0px;
+  height: 50px;
+  width: 100%;
+  font-size: large;
+  font-weight: 700;
+  padding-bottom: 15px;
+  outline: none;
+ }
+ ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(73, 73, 73);
+  opacity: 1; /* Firefox */
+  font-size: 1.2rem;
+ }
+ /* .ResultsList {
+   flex-wrap: wrap;
+  } */
+ .ResultsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  animation: fadeIn 3s
+ }
+
+ @keyframes fadeIn {
+from{
+   opacity:0%;
+  }
+  to{
+    opacity: 100%;
+   }
+ }
+
+
+
+ .Result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  /* padding-right: 10px; */
+  margin: auto;
+  padding: 7px;
+
+  /* border: 1px solid black;
+  border-radius: 15px; */
+
+  border-bottom: 2px solid rgb(165, 165, 165);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 20px;
+  border-right: 3px solid rgb(165, 165, 165);
+  border-bottom-left-radius: 20px; 
+ }
+
+ .Result p{
+   font-size: 25px;
+ }
+
+ .Result button{
+   width: 30%;
+   background-color: rgb(24, 75, 109);
+   color: white;
+ }
+
+ .Result button:hover{
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  background-color: rgb(63, 132, 179);
+  color: white;
+}
+
+ .Result:hover {
+   transform: scale(1.04);
+   transition-duration: .3s;
+ }
+ #Recipe-Name {
+  margin: 0;
+  /* padding-left: 8px; */
+  text-align: left;
+ }
+ #Recipe-Thumbnail {
+  padding-left: 8px;
+ }
+ #Recipe-Description {
+  padding-left: 8px;
+ }
+ #Star-Icon {
+  height: 20px;
+  width: 20px;
+  align-self: flex-end;
+ }
+ .Star-Icon {
+  position: relative;
+  float: right;
+ }
+
+ #RRLogo {
+  height: 120px;
+  width: 120px;
+  border: 4px solid black;
+  border-radius: 50%;
+  align-self: flex-start;
+  position: fixed;
+  left: 0; 
+  margin-left: 7px;
+  animation: enter 1s calc(1) cubic-bezier(0.62, 0.2, 0.38, 1.14);
+ }
+
+ @keyframes enter {
+   from {
+    transform: translate(-350px);
+   }
+   to {
+    transform: translateX(0px);
+   }
+  }
+
+ #ResultsHeader {
+   padding-left: 7px;
+  color: black;
+ text-decoration: underline;
+  animation: fadeIn 3s
+ }
+
+ #Heart {
+   height: 40px;
+   width: 40px;
+   position: relative;
+   display: inline;
+   align-self: flex-end;
+   z-index: 1;
+ }
+
+ @media screen and (max-width: 760px) {
+  .ResultsList {
+   display: flex;
+   flex-direction: row;
+  }
+  .Result {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: rgb(255, 255, 255);
+   border: 2px solid black;
+   border-radius: 15px;
+   width: 80%;
+   height: 150px;
+   margin: auto;
+  }
+  #Recipe-Thumbnail {
+   padding-left: 8px;
+  }
+  ::placeholder {
+   /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: rgb(0, 0, 0);
+   opacity: 1; /* Firefox */
+   font-size: 1rem;
+  }
+  #Search-Button {
+   color: white;
+   background-color: rgb(53, 177, 135);
+   font-size: medium;
+   font-weight: 500;
+   height: 40px;
+   width: 150px;
+   border-radius: 50px;
+   border: none;
+   z-index: 3;
+  }
+  #Search-Button:hover {
+   background-color: rgb(24, 75, 109);
+   transition-duration: 0.3s;
+   cursor: pointer;
+   /* animation: rise 1s calc(1) ease-in */
+  }
+ }
