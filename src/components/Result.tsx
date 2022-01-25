@@ -16,7 +16,7 @@ const Result = ({ recipe }: Prop) => {
       <h2 id="Recipe-Name">{recipe.label}</h2>
       
       <img src={recipe.image} alt="Image of Tastey Dish" />
-      <p>Cook and Prep Time: {recipe.totalTime} minutes.</p>
+      <p>Done in <span id="Recipe-Time">{recipe.totalTime}</span>minutes.</p>
       <a href={recipe.url}>Click Here to see the full Recipe!</a>
       <img src={HeartBlack} id="Heart"></img>
       {/* tenenorary oporater for when details is true */}

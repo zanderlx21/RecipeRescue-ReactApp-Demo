@@ -254,6 +254,11 @@ from{
  #Recipe-Thumbnail {
   padding-left: 8px;
  }
+
+ #Recipe-Time {
+   font-weight: 900;
+   font-size: 1.7rem;
+ }
  #Recipe-Description {
   padding-left: 8px;
  }
