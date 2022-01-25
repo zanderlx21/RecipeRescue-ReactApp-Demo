@@ -297,7 +297,8 @@ from{
    padding-left: 7px;
   color: black;
  text-decoration: underline;
-  animation: fadeIn 3s
+  animation: fadeIn 3s;
+  margin-bottom: 0
  }
 
  #Heart {
@@ -306,7 +307,14 @@ from{
    position: relative;
    display: inline;
    align-self: flex-end;
-   z-index: 1;
+   z-index: 0;
+ }
+
+ .More-Details {
+  height: 100px;
+  background-color: rgb(228, 233, 241);
+  font-size: larger;
+  z-index: 1;
  }
 
  @media screen and (max-width: 760px) {

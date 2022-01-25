@@ -30,7 +30,7 @@ const SearchForms = ({onSubmit}: Prop) => {
                 <form id="The-Form" onSubmit={handleSubmit}>
                     <input type="text" name="label" id="Search-Bar" placeholder='What are you in the mood for?' value={label} onChange={(e) => setLabel(e.target.value)}/>
                     <button type="submit" id="Search-Button">SEARCH</button>
-                    <button id="Extra-Seach-Options-Button"onClick={()=> {showForm === false ? setShowForm(true) : setShowForm(false)}}>Advanced Search</button>
+                    <button id="Extra-Seach-Options-Button" onClick={()=> {!showForm ? setShowForm(true) : setShowForm(false)}}>Advanced Search</button>
                     {showForm ? <div className='Radio-Buttons'>
                     <input type="radio" name="alcohol-cocktail" id="alcohol-cocktail" value="alcohol-cocktail" onChange={(e) => setDiet(e.target.value)} /><label htmlFor="alcohol-cocktail">Alcohol Cocktail</label>
                     <input type="radio" name="alcohol-free" id="alcohol-free" value="alcohol-free" onChange={(e) => setDiet(e.target.value)} /><label htmlFor="alcohol-free">Alcohol-Free</label>
